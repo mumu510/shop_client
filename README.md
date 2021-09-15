@@ -1,6 +1,3 @@
-# vue_client
-
-# git 练习
 
 ## Project setup
 
