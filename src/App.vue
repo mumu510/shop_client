@@ -1,22 +1,23 @@
 <template>
   <div id="app">
-    app组件
+    <Header></Header>
+    <!-- 所有的一级路由都在这显示 -->
+    <router-view></router-view>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Header from './components/Header'
+import Footer from './components/Footer'
 export default {
   name: 'App',
+  // 注册组件
+  components: {
+    Header,
+    Footer,
+  },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
